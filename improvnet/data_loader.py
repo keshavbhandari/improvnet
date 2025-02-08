@@ -12,8 +12,8 @@ from copy import deepcopy
 from torch.utils.data import Dataset
 import torch
 from torch.nn import functional as F
-from aria.data.midi import MidiDict
-from aria.tokenizer import AbsTokenizer
+from ariautils.midi import MidiDict
+from ariautils.tokenizer import AbsTokenizer
 
 from corruptions import DataCorruption
 

@@ -1,4 +1,4 @@
-git+https://github.com/EleutherAI/aria.git
+ariautils @ git+https://github.com/EleutherAI/aria-utils.git
 evaluate==0.4.1
 jsonlines==4.0.0
 miditoolkit==1.0.1

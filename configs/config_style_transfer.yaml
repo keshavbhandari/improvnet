@@ -49,8 +49,8 @@ training:
 generation:
   convert_from: classical
   convert_to: jazz # Choose from ['jazz', 'classical'].
-  midi_file_path: "/input/debussy-clair-de-lune.mid"
-  wav_file_path: "/input/debussy-clair-de-lune_original.wav"
+  midi_file_path: "/homes/kb658/improvnet/input/debussy-clair-de-lune.mid"
+  wav_file_path: "/homes/kb658/improvnet/input/debussy-clair-de-lune_original.wav"
   novel_peaks_pct: 0.05 # Percentage of novel peaks to be preserved.
   temperature: 1.0 # Temperature for sampling.
   context_before: 5 # Number of context frames before the corruption segment.

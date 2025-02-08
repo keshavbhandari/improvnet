@@ -1,5 +1,5 @@
-from aria.data.midi import MidiDict
-from aria.tokenizer import AbsTokenizer
+from ariautils.midi import MidiDict
+from ariautils.tokenizer import AbsTokenizer
 import pickle
 import argparse
 import yaml

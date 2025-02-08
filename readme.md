@@ -33,7 +33,7 @@ For more details, refer to the paper:
 ---
 
 ## Setup Instructions
-You need Python 3.10 or later to run this code.
+You need Python >= 3.11 to run this code.
 
 ### Clone the repository and install dependencies
 ```bash

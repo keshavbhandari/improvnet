@@ -13,8 +13,8 @@ import torch
 from torch.nn import functional as F
 from transformers import EncoderDecoderModel
 from torch.cuda import is_available as cuda_available
-from aria.data.midi import MidiDict
-from aria.tokenizer import AbsTokenizer
+from ariautils.midi import MidiDict
+from ariautils.tokenizer import AbsTokenizer
 
 from corruptions import DataCorruption
 

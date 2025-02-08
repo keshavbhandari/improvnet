@@ -19,8 +19,8 @@ torch.set_warn_always(False)
 from torch.nn import functional as F
 from transformers import EncoderDecoderModel
 from torch.cuda import is_available as cuda_available
-from aria.data.midi import MidiDict
-from aria.tokenizer import AbsTokenizer
+from ariautils.midi import MidiDict
+from ariautils.tokenizer import AbsTokenizer
 import pretty_midi
 
 from corruptions import DataCorruption

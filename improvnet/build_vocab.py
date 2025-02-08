@@ -4,8 +4,8 @@ import argparse
 import pickle
 import glob
 import json
-from aria.data.midi import MidiDict
-from aria.tokenizer import AbsTokenizer
+from ariautils.midi import MidiDict
+from ariautils.tokenizer import AbsTokenizer
 from tqdm import tqdm
 import random
 import pickle
