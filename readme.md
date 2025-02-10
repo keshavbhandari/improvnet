@@ -2,7 +2,7 @@
 
 🌐 [**Demo Website**](https://keshavbhandari.github.io/portfolio/improvnet.html)
 
-📄 [**ArXiv Paper**](https://arxiv.org/abs/your-paper-id) 
+📄 [**ArXiv Paper**](https://www.arxiv.org/abs/2502.04522) 
 
 🚀 [**Run in Colab**](https://colab.research.google.com/drive/1wywPizbCJOJoODzogEXY59wyBalw6Hay?usp=sharing)  
 ---
@@ -138,7 +138,7 @@ To train individual models, use the following commands:
   !python improvnet/train_classifier.py --config configs/configs_style_transfer.yaml
   ```
 
-<!-- ## Citation
+## Citation
 
 If you use this repository in your work, please cite:
 
@@ -149,6 +149,6 @@ If you use this repository in your work, please cite:
   journal   = {arXiv preprint},
   year      = {2025},
   archivePrefix = {arXiv},
-  eprint    = {2501.XXXXX}, % Replace with actual arXiv identifier
+  eprint    = {2502.04522}, % Replace with actual arXiv identifier
   primaryClass = {cs.SD} % Adjust field if necessary (e.g., cs.AI, cs.LG)
-} -->
+}
