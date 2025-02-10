@@ -149,6 +149,6 @@ If you use this repository in your work, please cite:
   journal   = {arXiv preprint},
   year      = {2025},
   archivePrefix = {arXiv},
-  eprint    = {2502.04522}, % Replace with actual arXiv identifier
-  primaryClass = {cs.SD} % Adjust field if necessary (e.g., cs.AI, cs.LG)
+  eprint    = {2502.04522},
+  primaryClass = {cs.SD}
 }
