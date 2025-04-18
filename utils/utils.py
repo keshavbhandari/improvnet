@@ -11,7 +11,7 @@ from tqdm import tqdm
 from music21 import converter, instrument, stream, note
 import subprocess
 from concurrent.futures import ProcessPoolExecutor
-from ssmnet.core import SsmNetDeploy
+# from ssmnet.core import SsmNetDeploy
 
 
 # Define a function to flatten the tokenized sequence

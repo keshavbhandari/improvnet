@@ -203,19 +203,20 @@ def generate(midi_file_path, audio_file_path, fusion_model, configs, novel_peaks
     tokenized_sequence = tokenized_sequence[2:-1]
 
     # Novelty based segmentation
-    if audio_file_path is None or audio_file_path == "":
-        novel_note_numbers = []
-    else:
-        ssm_config_file = "configs/config_ssm.yaml"
-        n_t_segments = len([t for t in tokenized_sequence if t == "<T>"])
-        novel_peaks_pct = configs['generation']['novel_peaks_pct']
-        n_novel_peaks = np.ceil(novel_peaks_pct * n_t_segments).astype(int)
-        if not quiet:
-            print("Number of novel peaks:", n_novel_peaks)
-        segment_novelty = Segment_Novelty(ssm_config_file, audio_file_path)
-        peak_times = segment_novelty.get_peak_timestamps(audio_file_path, n_novel_peaks)
-        pretty_midi_data = pretty_midi.PrettyMIDI(midi_file_path)
-        novel_note_numbers, novel_notes = get_midi_notes_from_tick(mid, pretty_midi_data, peak_times, quiet)
+    novel_note_numbers = []
+    # if audio_file_path is None or audio_file_path == "":
+    #     novel_note_numbers = []
+    # else:
+    #     ssm_config_file = "configs/config_ssm.yaml"
+    #     n_t_segments = len([t for t in tokenized_sequence if t == "<T>"])
+    #     novel_peaks_pct = configs['generation']['novel_peaks_pct']
+    #     n_novel_peaks = np.ceil(novel_peaks_pct * n_t_segments).astype(int)
+    #     if not quiet:
+    #         print("Number of novel peaks:", n_novel_peaks)
+    #     segment_novelty = Segment_Novelty(ssm_config_file, audio_file_path)
+    #     peak_times = segment_novelty.get_peak_timestamps(audio_file_path, n_novel_peaks)
+    #     pretty_midi_data = pretty_midi.PrettyMIDI(midi_file_path)
+    #     novel_note_numbers, novel_notes = get_midi_notes_from_tick(mid, pretty_midi_data, peak_times, quiet)
 
     # Flatten the tokenized sequence
     tokenized_sequence = flatten(tokenized_sequence, add_special_tokens=True)
